@@ -2,7 +2,7 @@ import os
 from shutil import move
 import pathlib
 
-ruta_base = pathlib.Path(r"C:\Users\SANTINO\OneDrive\Escritorio\Proyectos Python Automatizacion\AcomodarArchivos\CarpetaArchivos") # Ruta a la carpeta que se busca acomodar
+ruta_base = pathlib.Path(r"Ingresar Ruta\CarpetaArchivos") # Ruta a la carpeta que se busca acomodar, el nombre de la carpeta se puede modificar
 dicc_car = {".pdf": "Pdfs", ".jpg": "Images", ".png": "Images", ".docx": "Docs", ".exe": "Exe y Zip", ".zip": "Exe y Zip", ".txt": "Textos"} # Diccionario con extensiones, si se desea otra solo agregar
  
 def crear_y_mover_archivos(ruta, archivo, dicc): # En caso de no existir la carpeta la crea y mueve el archivo
